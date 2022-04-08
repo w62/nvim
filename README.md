@@ -1,5 +1,8 @@
 # My neovim configuration
 
+Everything should be sitting in $HOME/.config/ 
+neovim 0.6 or later is required.
+
 It is based on [Christian Chiarulli's](https://twitter.com/chrisatmachine) [Neovim from Scratch](https://www.youtube.com/playlist?list=PLhoH5vyxr6Qq41NFL4GvhFp-WLd5xzIzZ)
 
 Initially I am setting up my neovim for learning Rust. But as I moved on, I am picking up some sorts of lua as well. Then moving on to writing with neovim.
