@@ -17,3 +17,5 @@ Some neovim resources:
 [TJ DeVries' YouTube channel](https://www.youtube.com/c/TJDeVries/videos)
 
 [Bash2Basics: Neovim Lua Plugin From Scratch](https://www.youtube.com/watch?v=n4Lp4cV8YR0)
+
+[A plugin in Rust](https://github.com/boxofrox/neovim-scorched-earth) which is based on [neovim-lib](https://github.com/daa84/neovim-lib)
