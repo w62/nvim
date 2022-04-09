@@ -48,17 +48,16 @@ return packer.startup(function(use)
 	use "wbthomason/packer.nvim" -- Have packer manage itself
 	use "nvim-lua/popup.nvim" -- An implmentation of the Popup API from vim in Neovim
 	use "nvim-lua/plenary.nvim" -- Useful lua functions used by lots of plugins
-	use "akinsho/toggleterm.nvim"
-
 	use "rust-lang/rust.vim" -- Rust
- --	Plug "/Users/williamwong/.config/nvim/plugin/stackmap.nvim"
-
-	use "w62/stackmap.nvim" -- My own plugin
-
+	use "kyazdani42/nvim-web-devicons"
 	use {
 		"nvim-lualine/lualine.nvim",
 		 requires = { 'kyazdani42/nvim-web-devicons', opt = true }
 	}
+
+ --	Plug "/Users/williamwong/.config/nvim/plugin/stackmap.nvim"
+	use "w62/stackmap.nvim" -- My own plugin
+
 	-- Automatically setup your configuration after cloning pacler.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then

@@ -103,11 +103,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/williamwong/.local/share/nvim/site/pack/packer/start/stackmap.nvim",
     url = "https://github.com/w62/stackmap.nvim"
-  },
-  ["toggleterm.nvim"] = {
-    loaded = true,
-    path = "/Users/williamwong/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
-    url = "https://github.com/akinsho/toggleterm.nvim"
   }
 }
 
