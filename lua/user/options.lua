@@ -48,3 +48,22 @@ vim.cmd [[set spell spelllang=en_us]]
 -- let g:airline#extensions
 -- For details, please refer to here:
 -- https://www.youtube.com/watch?v=GOCVCn5tlmo&t=902s
+--
+
+vim.api.nvim_command([[
+    augroup FileTest
+    autocmd BufRead *.rs :echo 'hello Rust'
+    augroup END
+]])
+
+-- vim.api.nvim_create_autocmd seems not working until 0.7
+--[[
+vim.api.nvim_create_autocmd("FileType", {
+	pattern = { "lua", "txt" },
+	callback = function()
+		vim.schedule(function()
+			print("Hey, we got called")
+		end)
+	end,
+})
+]]--

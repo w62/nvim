@@ -12,22 +12,31 @@ This is the configuration that I am using - that I am polishing now.
 Here is the status:
 
 Window navigation:
+
 CTRL-h moves to the left one
+
 CTRL-j moves to the below one
+
 CTRL-k moves to the above one
+
 CTRL-l moves to the right 
 
 Window resize:
+
 CTRL-arrow keys
 
 Buffer nevigation:
+
 Shift-l moves to the previous buffer
+
 Shift-n moves to the next buffer
 
 Visual block mode:
+
 Shift-hjkl moves the blocked text around
 
 To do:
+
 Tab navigation
 
 I deliberately not enable the various autocompletion or hint for Rust as I want to make mistakes during my learning process.
