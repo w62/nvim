@@ -5,7 +5,7 @@ local options = {
 	cmdheight = 2,
 	completeopt = { "menuone", "noselect" },
 	conceallevel = 0,
-	fileencoding = "utf=8",
+	fileencoding = "utf-8",
 	ignorecase = true,
 	mouse = "a",
 	pumheight = 10,
