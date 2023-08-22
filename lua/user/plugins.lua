@@ -54,13 +54,13 @@ return packer.startup(function(use)
 		"nvim-lualine/lualine.nvim",
 		 requires = { 'kyazdani42/nvim-web-devicons', opt = true }
 	}
+	    use {
+        'nvim-treesitter/nvim-treesitter',
+        run = function()
+            local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
+            ts_update()
+        end,
+    }
+	use "fatih/vim-go"
 
- --	Plug "/Users/williamwong/.config/nvim/plugin/stackmap.nvim"
-	use "w62/stackmap.nvim" -- My own plugin
-
-	-- Automatically setup your configuration after cloning pacler.nvim
-	-- Put this at the end after all plugins
-	if PACKER_BOOTSTRAP then
-		require("packer").sync()
-	end
 end)
