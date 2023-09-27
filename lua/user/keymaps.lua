@@ -37,6 +37,9 @@ keymap("n", "<C-f>", ":vertical resize +2<CR>", opts)
 -- Rustfmt
 keymap("n", "<leader>r", "<cmd>RustFmt<cr>", opts)
 
+-- clang-format
+keymap("n", "<leader>k", ":%!clang-format<cr>", opts)
+
 -- Left file explorer
 keymap("n", "<leader>e", ":Lex 30<cr>", opts)
 
