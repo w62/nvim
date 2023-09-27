@@ -61,6 +61,13 @@ return packer.startup(function(use)
             ts_update()
         end,
     }
-	use "fatih/vim-go"
+	-- use "fatih/vim-go"
+	use {
+  "olexsmir/gopher.nvim",
+  requires = { -- dependencies
+    "nvim-lua/plenary.nvim",
+    "nvim-treesitter/nvim-treesitter",
+  },
+}
 
 end)
