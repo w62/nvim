@@ -1,6 +1,2 @@
-require "user.options"
-require "user.keymaps"
-require "user.plugins"
-require "user.colorscheme"
-require "user.lualine"
-require "others.foo"
+require "user"
+require "plugin_config"

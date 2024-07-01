@@ -46,28 +46,28 @@ packer.init {
 return packer.startup(function(use)
 	-- My plugins here
 	use "wbthomason/packer.nvim" -- Have packer manage itself
-	use "nvim-lua/popup.nvim" -- An implmentation of the Popup API from vim in Neovim
-	use "nvim-lua/plenary.nvim" -- Useful lua functions used by lots of plugins
+    use "nvim-tree/nvim-tree.lua"
+    use "nvim-tree/nvim-web-devicons"
 	use "rust-lang/rust.vim" -- Rust
-	use "kyazdani42/nvim-web-devicons"
+	use {
+        "williamboman/mason.nvim",
+        "williamboman/mason-lspconfig.nvim",
+        "neovim/nvim-lspconfig"
+    }
+    use "hrsh7th/nvim-cmp"
+    use "hrsh7th/cmp-nvim-lsp"
+    use "L3MON4D3/LuaSnip"
 	use {
 		"nvim-lualine/lualine.nvim",
 		 requires = { 'kyazdani42/nvim-web-devicons', opt = true }
 	}
-	    use {
-        'nvim-treesitter/nvim-treesitter',
-        run = function()
-            local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
-            ts_update()
-        end,
+    use "nvim-treesitter/nvim-treesitter"
+    use {
+        'nvim-telescope/telescope.nvim',
+        tag = '0.1.4',
+        requires = {{ 'nvim-lua/plenary.nvim'}}
     }
-	-- use "fatih/vim-go"
-	use {
-  "olexsmir/gopher.nvim",
-  requires = { -- dependencies
-    "nvim-lua/plenary.nvim",
-    "nvim-treesitter/nvim-treesitter",
-  },
-}
-
+    if pakcer_bootsrap then
+        require('packer').sync()
+    end
 end)
