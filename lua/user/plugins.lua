@@ -67,6 +67,10 @@ return packer.startup(function(use)
         tag = '0.1.4',
         requires = {{ 'nvim-lua/plenary.nvim'}}
     }
+use 'lewis6991/gitsigns.nvim' -- OPTIONAL: for git status
+use 'romgrk/barbar.nvim'
+
+
     if pakcer_bootsrap then
         require('packer').sync()
     end
