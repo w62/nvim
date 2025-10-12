@@ -1,5 +1,13 @@
 # My neovim configuration
 
+2025-10-12
+
+start with a minimal init.lua so as to learn neovim from scratch
+
+```
+make CMAKE_INSTALL_PREFIX=$HOME/local/nvim install
+```
+
 Everything should be sitting in $HOME/.config/ 
 neovim 0.6 or later is required.
 
